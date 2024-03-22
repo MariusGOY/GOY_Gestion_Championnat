@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css" data-th-href="@{/css/style.css}" />
+    <title>Connexion</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .card {
+            width: 400px;
+            height: 600px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .titre {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .label {
+            margin-bottom: 5px;
+        }
+
+        .input {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .bouton {
+            padding: 10px 20px;
+            border: 20px;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .bouton:hover {
+            background-color: #0069d9;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <h1 class="titre">Connexion</h1>
+    <form class="form">
+        <label class="label">Nom :</label>
+        <input type="text" class="input" placeholder="Entrez votre nom">
+
+        <label class="label">Prénom :</label>
+        <input type="text" class="input" placeholder="Entrez votre prénom">
+
+        <label class="label">Login :</label>
+        <input type="text" class="input" placeholder="Entrez votre login">
+
+        <label class="label">Mot de passe :</label>
+        <input type="password" class="input" placeholder="Entrez votre mot de passe">
+
+        <label class="label">Pseudo :</label>
+        <input type="text" class="input" placeholder="Entrez votre pseudo">
+
+        <label class="label">Email :</label>
+        <input type="email" class="input" placeholder="Entrez votre email">
+
+        <button class="bouton">Se connecter</button>
+    </form>
+</div>
+</body>
+</html>

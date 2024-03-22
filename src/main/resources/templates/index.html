@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css" data-th-href="@{/css/style.css}" />
+    <title>Index - Championnat</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .card {
+            width: 400px;
+            height: 500px; /* Augmente la hauteur pour les boutons */
+            margin: 0 auto;
+            text-align: center;
+            padding: 30px; /* Augmente le padding pour les boutons */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .message {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .titre {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .lien {
+            display: block;
+            margin-bottom: 20px; /* Augmente l'espacement entre les boutons */
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            padding: 10px 20px; /* Augmente le padding des boutons */
+            border: 1px solid #007bff; /* Ajoute un contour bleu */
+            border-radius: 5px;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1); /* Ajoute une ombre subtile */
+        }
+
+        .lien:hover {
+            text-decoration: underline;
+            background-color: #0069d9; /* Change la couleur de fond au hover */
+            color: white;
+        }
+
+        .bouton-connexion {
+            display: inline-block;
+            margin-right: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <p class="message">Bienvenue sur le site du championnat !</p>
+    <h1 class="titre">Gestion championnat</h1>
+    <a href="creationEquipe" class="lien">Créer une équipe</a>
+    <a href="creationMatch" class="lien">Créer un match</a>
+    <a href="aficheResulta" class="lien">Résultats et classement</a>
+    <a href="aficheInfo" class="lien">Informations d'une équipe</a>
+    <a href="connexion" class="lien">connexion</a>
+
+</div>
+</body>
+</html>

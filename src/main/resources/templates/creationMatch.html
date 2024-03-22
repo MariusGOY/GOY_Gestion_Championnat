@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css" data-th-href="@{/css/style.css}" />
+    <title>Création de match</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .card {
+            width: 600px;
+            height: 600px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .titre {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .label {
+            margin-bottom: 5px;
+        }
+
+        .input {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .select {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .bouton {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .bouton:hover {
+            background-color: #0069d9;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <h1 class="titre">Création de match</h1>
+    <form class="form">
+        <label class="label">Nom du match :</label>
+        <input type="text" class="input" placeholder="Entrez le nom du match">
+
+        <label class="label">Stade :</label>
+        <select class="select">
+            <option value="">Sélectionner un stade</option>
+            <option value="Stade de France">Stade de France</option>
+            <option value="Parc des Princes">Parc des Princes</option>
+            <option value="Vélodrome">Vélodrome</option>
+        </select>
+
+        <label class="label">Date de début :</label>
+        <input type="date" class="input" placeholder="Entrez la date de début">
+
+        <label class="label">Date de fin :</label>
+        <input type="date" class="input" placeholder="Entrez la date de fin">
+
+        <label class="label">Points gagnés :</label>
+        <input type="number" class="input" placeholder="Entrez les points gagnés">
+
+        <label class="label">Points perdus :</label>
+        <input type="number" class="input" placeholder="Entrez les points perdus">
+
+        <label class="label">Points nuls :</label>
+        <input type="number" class="input" placeholder="Entrez les points nuls">
+
+        <label class="label">Classement :</label>
+        <input type="number" class="input" placeholder="Entrez le classement">
+
+        <button class="bouton">Créer le match</button>
+    </form>
+</div>
+</body>
+</html>

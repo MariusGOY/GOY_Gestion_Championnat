@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css" data-th-href="@{/css/style.css}" />
+    <title>Résultats et Classement du Championnat</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .card-titre {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .table thead th,
+        .table tbody td {
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        .table thead th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <h1 class="card-titre">Résultats et Classement du Championnat</h1>
+    </div>
+
+    <div class="card">
+        <h2 class="card-titre">Résultats - Journée X</h2>
+
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Équipe 1</th>
+                <th>Score</th>
+                <th>Équipe 2</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>FC Nantes</td>
+                <td>2</td>
+                <td>Olympique Lyonnais</td>
+            </tr>
+            <tr>
+                <td>Paris Saint-Germain</td>
+                <td>1</td>
+                <td>Olympique de Marseille</td>
+            </tr>
+            <tr>
+                <td>RC Strasbourg</td>
+                <td>0</td>
+                <td>AS Monaco</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2 class="card-titre">Classement</h2>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Rang</th>
+                <th>Équipe</th>
+                <th>Pts</th>
+                <th>J</th>
+                <th>G</th>
+                <th>N</th>
+                <th>P</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Paris Saint-Germain</td>
+                <td>52</td>
+                <td>28</td>
+                <td>16</td>
+                <td>4</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Olympique de Marseille</td>
+                <td>50</td>
+                <td>28</td>
+                <td>15</td>
+                <td>5</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>AS Monaco</td>
+                <td>46</td>
+                <td>28</td>
+                <td>14</td>
+                <td>4</td>
+                <td>10</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

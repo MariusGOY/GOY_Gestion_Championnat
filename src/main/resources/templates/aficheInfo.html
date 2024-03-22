@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css" data-th-href="@{/css/style.css}" />
+    <title>Informations d'une équipe</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .card-titre {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .info {
+            margin-bottom: 10px;
+            background-color: #f2f2f2;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        .info label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .info span {
+            display: block;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <h1 class="card-titre">Informations d'une équipe</h1>
+    </div>
+
+    <div class="card">
+        <h2>Nom de l'équipe :</h2>
+        <div class="info">
+            <label>Nom :</label>
+            <span>Olympique Lyonnais</span>
+        </div>
+
+        <h2>Stade :</h2>
+        <div class="info">
+            <label>Nom :</label>
+            <span>Groupama Stadium</span>
+        </div>
+        <div class="info">
+            <label>Capacité :</label>
+            <span>59 185 places</span>
+        </div>
+
+        <h2>Entraineur :</h2>
+        <div class="info">
+            <label>Nom :</label>
+            <span>Laurent Blanc</span>
+        </div>
+
+        <h2>Président :</h2>
+        <div class="info">
+            <label>Nom :</label>
+            <span>Jean-Michel Aulas</span>
+        </div>
+
+        <h2>Contact :</h2>
+        <div class="info">
+            <label>Téléphone :</label>
+            <span>04 72 77 40 00</span>
+        </div>
+        <div class="info">
+            <label>Site web :</label>
+            <span><a href="https://www.ol.fr/">https://www.ol.fr/</a></span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
